@@ -1,0 +1,12 @@
+[
+  { "id": "ej01", "nombre": "Sofía",   "mensaje": "¡Qué hermosa te ves, Nahi! Ensayo del vals 💃", "imagen": "/img/demo/demo01.jpg", "hashtags": ["15deNahi"], "fecha": "2026-09-20T19:30:00-03:00", "likes": 12, "oculto": false, "fuente": "ejemplo" },
+  { "id": "ej02", "nombre": "Male",    "mensaje": "Previa con las amigas antes de salir ✨",          "imagen": "/img/demo/demo02.jpg", "hashtags": ["15deNahi"], "fecha": "2026-10-03T18:10:00-03:00", "likes": 9,  "oculto": false, "fuente": "ejemplo" },
+  { "id": "ej03", "nombre": "Tío Fede","mensaje": "Llegando al salón, ¡empieza la fiesta! 🎉",        "imagen": "/img/demo/demo03.jpg", "hashtags": ["15deNahi"], "fecha": "2026-10-03T20:00:00-03:00", "likes": 21, "oculto": false, "fuente": "ejemplo" },
+  { "id": "ej04", "nombre": "Abuela Rosa", "mensaje": "Toda la familia junta, un día inolvidable ❤️", "imagen": "/img/demo/demo04.jpg", "hashtags": ["15deNahi", "familia"], "fecha": "2026-10-03T20:20:00-03:00", "likes": 30, "oculto": false, "fuente": "ejemplo" },
+  { "id": "ej05", "nombre": "Caro",    "mensaje": "La torta quedó divina 🎂",                          "imagen": "/img/demo/demo05.jpg", "hashtags": ["15deNahi"], "fecha": "2026-10-03T21:15:00-03:00", "likes": 15, "oculto": false, "fuente": "ejemplo" },
+  { "id": "ej06", "nombre": "Juan",    "mensaje": "Rompiendo la pista 🕺",                             "imagen": "/img/demo/demo06.jpg", "hashtags": ["15deNahi"], "fecha": "2026-10-03T22:00:00-03:00", "likes": 18, "oculto": false, "fuente": "ejemplo" },
+  { "id": "ej07", "nombre": "Vale",    "mensaje": "Brindis por la nueva quinceañera 🥂",               "imagen": "/img/demo/demo07.jpg", "hashtags": ["15deNahi"], "fecha": "2026-10-03T22:45:00-03:00", "likes": 24, "oculto": false, "fuente": "ejemplo" },
+  { "id": "ej08", "nombre": "Nahi",    "mensaje": "Cambio a las zapatillas ¡a seguir bailando! 👟",     "imagen": "/img/demo/demo08.jpg", "hashtags": ["15deNahi"], "fecha": "2026-10-03T23:10:00-03:00", "likes": 40, "oculto": false, "fuente": "ejemplo" },
+  { "id": "ej09", "nombre": "Lu",      "mensaje": "Recuerdo de una noche mágica 💫",                    "imagen": "/img/demo/demo09.jpg", "hashtags": ["15deNahi"], "fecha": "2026-10-03T23:40:00-03:00", "likes": 11, "oculto": false, "fuente": "ejemplo" },
+  { "id": "ej10", "nombre": "Fam. Gómez", "mensaje": "Cerrando la noche a puro cariño 🌙",             "imagen": "/img/demo/demo10.jpg", "hashtags": ["15deNahi"], "fecha": "2026-10-04T00:20:00-03:00", "likes": 8,  "oculto": false, "fuente": "ejemplo" }
+]

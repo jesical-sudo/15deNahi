@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muro de los 15 de Nahiara</title>
+<meta name="description" content="Muro social en vivo — #15deNahi">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💃</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="sparkle-field" aria-hidden="true"></div>
+
+<header class="wall-header">
+  <div class="brand">
+    <h1 class="brand-name" id="brandName">Nahiara</h1>
+    <span class="brand-tagline" id="brandTagline">Mis 15</span>
+  </div>
+  <div class="brand-meta">
+    <span class="pill hashtag" id="hashtagPill">#15deNahi</span>
+    <span class="pill"><span class="dot" aria-hidden="true"></span> <span id="liveLabel">En vivo</span></span>
+    <div class="countdown" id="countdown" aria-label="Cuenta regresiva para el evento">
+      <div class="unit"><strong id="cdDays">–</strong><span>días</span></div>
+      <div class="unit"><strong id="cdHours">–</strong><span>hs</span></div>
+      <div class="unit"><strong id="cdMins">–</strong><span>min</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<main>
+  <div id="emptyState" class="empty-state" hidden>
+    <h2>Todavía no hay fotos</h2>
+    <p>Escaneá el código QR para subir la primera foto de la noche y aparecer acá al instante ✨</p>
+  </div>
+  <div id="wall" class="wall mode-mosaico" role="list" aria-label="Fotos del evento"></div>
+</main>
+
+<!-- dock de controles -->
+<div class="dock" role="toolbar" aria-label="Controles del muro">
+  <div class="dock-group" role="group" aria-label="Modo de visualización">
+    <button type="button" data-mode="mosaico" class="active">Mosaico</button>
+    <button type="button" data-mode="carrusel">Carrusel</button>
+    <button type="button" data-mode="gigante">Gigante</button>
+  </div>
+  <button type="button" class="icon-btn" id="playPauseBtn" title="Pausar rotación" aria-pressed="false">⏸</button>
+  <div class="speed">
+    <input type="range" id="speedRange" min="2" max="15" step="1" value="5" aria-label="Velocidad de rotación en segundos">
+    <span class="speed-label" id="speedLabel">5 s</span>
+  </div>
+  <button type="button" class="icon-btn" id="openPanelBtn" title="Panel del organizador">⚙️</button>
+</div>
+
+<!-- QR flotante -->
+<div class="qr-float" id="qrFloat">
+  <button type="button" class="close-qr" id="closeQr" aria-label="Ocultar QR">✕</button>
+  <img id="qrImg" src="" alt="Código QR para subir tu foto" width="140" height="140">
+  <p>Escaneá y subí tu foto<br><strong id="qrHashtag">#15deNahi</strong></p>
+</div>
+
+<!-- modal de post -->
+<div class="modal-backdrop" id="modalBackdrop" hidden>
+  <div class="modal-card" id="modalCard" role="dialog" aria-modal="true" aria-labelledby="modalName">
+    <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Cerrar">✕</button>
+  </div>
+</div>
+
+<!-- panel de organizador -->
+<div class="panel-backdrop" id="panelBackdrop" hidden></div>
+<aside class="panel" id="panel" hidden aria-label="Panel del organizador"></aside>
+
+<div class="toast" id="toast"></div>
+
+<noscript>Este muro necesita JavaScript activado para mostrar las fotos en vivo.</noscript>
+
+<script src="/js/feed-adapter.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
